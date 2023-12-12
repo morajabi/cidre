@@ -109,7 +109,7 @@ impl Session {
         image_buffer: &cv::ImageBuf,
         pts: cm::Time,
         duration: cm::Time,
-        frame_properties: Option<&cf::DictionaryOf<cf::String, cf::Type>>,
+        frame_properties: Option<&cf::Dictionary>,
         source_frame_ref_con: *mut c_void,
         info_flags_out: &mut Option<NonNull<vt::EncodeInfoFlags>>,
     ) -> os::Status {
